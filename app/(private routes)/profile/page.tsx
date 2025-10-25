@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { User } from "@/types/user";
 import { getServerMe } from "@/lib/api/serverApi";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Note Hub. Profile",
