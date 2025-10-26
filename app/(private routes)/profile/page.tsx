@@ -52,14 +52,15 @@ export default async function Profile() {
         </div>
 
         <div className={css.avatarWrapper}>
-          <Image
-            src="https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"
-            alt="User Avatar"
-            width={150}
-            height={150}
-            className={css.avatar}
-          />
-        </div>
+  <Image
+    src={user.avatar || "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"}
+    alt={`${user.username || "User"} Avatar`}
+    width={150}
+    height={150}
+    className={css.avatar}
+  />
+</div>
+
 
         <div className={css.profileInfo}>
           <p>Username: {user.username || "N/A"}</p>
